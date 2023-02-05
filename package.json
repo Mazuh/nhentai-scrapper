@@ -1,0 +1,27 @@
+{
+  "name": "nhentai-light-scrapper",
+  "version": "0.1.0",
+  "description": "A lightweight tool for scrapping 'nhentai' pages.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Mazuh/nhentai-light-scrapper.git"
+  },
+  "keywords": [
+    "nhentai",
+    "hentai",
+    "scrapper"
+  ],
+  "author": "Mazuh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mazuh/nhentai-light-scrapper/issues"
+  },
+  "homepage": "https://github.com/Mazuh/nhentai-light-scrapper#readme",
+  "devDependencies": {
+    "prettier": "^2.8.3"
+  }
+}
