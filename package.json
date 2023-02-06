@@ -1,14 +1,15 @@
 {
-  "name": "nhentai-light-scrapper",
+  "name": "nhentai-scrapper",
   "version": "0.1.0",
-  "description": "A lightweight tool for scrapping 'nhentai' pages.",
+  "description": "A simple tool for scrapping 'nhentai' pages.",
   "main": "src/main.js",
   "scripts": {
+    "start": "SCRAP_HEADLESS=false SECONDS_TO_WAIT=10 node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Mazuh/nhentai-light-scrapper.git"
+    "url": "git+ssh://git@github.com/Mazuh/nhentai-scrapper.git"
   },
   "keywords": [
     "nhentai",
@@ -18,10 +19,15 @@
   "author": "Mazuh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mazuh/nhentai-light-scrapper/issues"
+    "url": "https://github.com/Mazuh/nhentai-scrapper/issues"
   },
-  "homepage": "https://github.com/Mazuh/nhentai-light-scrapper#readme",
+  "homepage": "https://github.com/Mazuh/nhentai-scrapper#readme",
   "devDependencies": {
     "prettier": "^2.8.3"
+  },
+  "dependencies": {
+    "puppeteer": "^19.6.3",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
   }
 }
