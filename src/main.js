@@ -31,7 +31,8 @@ console.log("Gallery URL:", galleryUrl.toString());
 
 // prepare storage
 
-const secondArg = (process.argv[3] || "").trim();
+const secondArg =
+  (process.argv[3] || "").trim() || (process.env.NHENTAI_STORAGE || "").trim();
 
 const storageRootPath =
   !secondArg || secondArg.startsWith("/")
