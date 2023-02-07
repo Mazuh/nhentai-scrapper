@@ -12,7 +12,7 @@ console.log("Gathering parameters...");
 
 // prepare id
 
-const firstArg = (process.argv[2] || "").trim();
+const firstArg = (process.argv[2] || "").trim().replaceAll("#", "");
 const galleryId = parseInt(firstArg, 10) ? firstArg : "";
 if (!galleryId) {
   console.error(
