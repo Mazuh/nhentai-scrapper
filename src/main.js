@@ -92,7 +92,8 @@ console.log();
         .map((el) => el.textContent)
         .map(
           (textContent) =>
-            textContent.match(/Pages.*\n?.*(?<pagesQtt>\d+)/)?.groups.pagesQtt
+            textContent.match(/Pages:\s*\n?\s*(?<pagesQtt>\d+)/)?.groups
+              .pagesQtt
         )
         .find((it) => it)
     );
