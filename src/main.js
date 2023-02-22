@@ -122,7 +122,8 @@ console.log();
     console.log("Printing images URLs...");
     console.log(imagesUrls.map((it) => it.toString()).join("\n"));
 
-    // downloads
+    // folders
+
     if (!storageRootPath) {
       console.log("Bye!");
       return;
@@ -140,7 +141,7 @@ console.log();
     }
 
     const storageGaleryPath = path
-      .join(storageRootPath, `${galleryId} - ${title}`)
+      .join(storageRootPath, `${galleryId} - ${title}`.replaceAll("/", "|"))
       .replaceAll(" ", "_");
     console.log("Gallery folder:", storageGaleryPath);
     if (fs.existsSync(storageGaleryPath)) {
@@ -150,6 +151,8 @@ console.log();
       fs.mkdirSync(storageGaleryPath);
       console.log("Done.");
     }
+
+    // downloads
 
     console.log();
     console.log("Downloading now.");
